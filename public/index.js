@@ -1,0 +1,11 @@
+$(function(){
+    $("#Vendor").click((event)=>{
+        window.location="vendors.html"
+    })
+    $("#AProd").click((event)=>{
+        window.location="products.html"
+    })
+    $("#User").click((event)=>{
+        window.location="user.html"
+    })
+})

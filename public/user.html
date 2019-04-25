@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src='users.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+        <div class="card text-center" style="margin:1%">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="card-header">
+                            <ul class="nav nav-pills card-header-pills justify-content-center">
+                                <li class="nav-item">
+                                    <button class="btn btn-outline-primary" id='Home' type="button">Home</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn btn-outline-primary" id='Vendor' type="button"style="margin-left:5%">Vendor</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn btn-outline-primary" id='Products' type="button" style="margin-left:10%">Products</button>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                            <div class="card-header">
+                                    <ul class="nav nav-pills card-header-pills justify-content-end">
+                                        <li class="nav-item" >
+                                            <button class="btn btn-outline-primary" id='cart' type="button">Cart</button>
+                                        </li>
+                                        <li class="nav-item" id="Username">
+                                            <!--  -->
+                                        </li>
+                                    </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+
+
+
+    
+              <div class="container">
+        <div class="row justify-content-center">
+            <form style="width:50%">
+                <div class="form-group" >
+                    <label>Username</label>
+                    <input type="text" class="form-control" id='user' placeholder="Enter Username">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id ='email' aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+
+                <div class="row justify-content-center"> 
+                        <input class="btn btn-outline-secondary" type="button" id='enter' value="Enter">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+        
+
+
+    <!-- <div>
+        <input type="text" >
+        <input type='email'  required>
+        <input type='button'  value='Enter'>
+        
+    </div> -->
+    <!-- <ul clas="nav justify-content-end">
+        <li class="nav-item"> 
+            <label id="Username"></label>
+        </li>
+        <li clas="nav-item">
+            <input type='button' value="Logout">
+        </li>
+    </ul> -->
+    <div class="container">
+        <div class="row m-3" id="productList">                
+        </div>
+    </div>
+    
+</body>
+</html>
