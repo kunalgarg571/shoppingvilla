@@ -5,11 +5,18 @@ function AddThisProduct(pid){
     var uid = localStorage.getItem('userId')
     var userName = localStorage.getItem('userName')
 
+
     if(userName!=null){
+        if(quantity=="" || quantity<1){
+            alert("Enter Valid Quantity!!")
+        }
+        else{
+            
         $.post('/getQuant',{productId:pid,Quantity:quantity,userId:uid},(data)=>{
             $(fin).val("")
             alert(data.message)
         })
+        }
     }
     else{
         alert("Login First!!")

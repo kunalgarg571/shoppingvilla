@@ -22,14 +22,21 @@ function refreshList(){
 $(function(){
         refreshList()
         $('#Add').click(()=>{
+            Vendor = $('#AddVendor')
             value = $('#AddVendor').val()
-            $.post('/hel', {
-                vendorName : value
-            },function(Data){
-                console.log(Data);
-                $('#AddVendor').val("")
-                refreshList()
-            });
+
+            if(value!=""){
+                $.post('/hel', {
+                    vendorName : value
+                },function(Data){
+                    console.log(Data);
+                    $('#AddVendor').val("")
+                    refreshList()
+                });
+            }
+            else{
+                alert("Enter Vendor Name First!!")
+            }
         })
 
     $('#Products').click(()=>{

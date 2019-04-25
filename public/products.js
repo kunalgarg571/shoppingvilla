@@ -45,11 +45,11 @@ $(function(){
         if(PName.val()==""){
             alert("Enter the Name of Product")
         }
-        else if(PQuantity.val()==""){
-            alert("Enter the Quantity of Product")
+        else if(PQuantity.val()=="" ||PQuantity.val()<1){
+            alert("Enter the valid Quantity of Product")
         }
-        else if(PPrice.val()==""){
-            alert("Enter the Price of Product")
+        else if(PPrice.val()=="" || PPrice.val()<1){
+            alert("Enter the valid Price of Product")
         }
         else{
             $.post('\Product',
